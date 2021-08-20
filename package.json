@@ -1,6 +1,7 @@
 {
   "name": "@francocorrea/cov-vaccine-uy-validate",
-  "version": "0.1.2",
+  "repository": "https://github.com/francocorreasosa/cov-vaccine-uy-validate",
+  "version": "0.1.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
