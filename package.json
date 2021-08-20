@@ -1,0 +1,70 @@
+{
+  "name": "@francocorrea/cov-vaccine-uy-validate",
+  "version": "0.1.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "test": "tsdx test"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "Franco Correa",
+  "module": "dist/cov-vaccine-uy-validate.esm.js",
+  "jest": {
+    "setupFiles": [
+      "./setup-tests.js"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "dist/cov-vaccine-uy-validate.cjs.production.min.js",
+      "limit": "65 KB"
+    },
+    {
+      "path": "dist/cov-vaccine-uy-validate.esm.js",
+      "limit": "65 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.3",
+    "husky": "^7.0.1",
+    "prettier": "^2.3.2",
+    "size-limit": "^5.0.3",
+    "text-encoding": "^0.7.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "base45-ts": "^1.0.3",
+    "buffer": "^6.0.3",
+    "cbor-web": "^8.0.1",
+    "isomorphic-webcrypto": "^2.3.8",
+    "pako": "^2.0.4",
+    "text-encoding-polyfill": "^0.6.7"
+  }
+}

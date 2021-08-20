@@ -1,0 +1,5 @@
+export const KEY = {
+  kty: 'RSA',
+  n: 'kJ9kg5xUlwn3VFYMN8uH8wxUze6OjuCpuEQZHBfUZ3_bTMAGFXrOZ_buGacTnFZnewjAeccoAhGrc6jCB25rutOgHgCyRomhDWp1WyVT5GjiexPD4p-_wIxh1wqRo_8ysvL3s54mKLalx7qz04xt4WKp9yi0ev3cdB_DojTGAtwD1Gd_zNYTRnS4zgW8NWth6v3xiiKtxbvjjOwl5TsC8t27Gpt7COW_O5zBY_atBqn7vEipcmQRggyhZISyhlUigTR71UxpwhLYXQdCqGz4F4PHZpZSyPgACkM-zAgXWZQqpm7Z5clnXF8t1B5j7WChjkt6c9HTDGqaftDLe63tZQ',
+  e: 'AQAB',
+} as const;
