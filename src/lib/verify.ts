@@ -20,7 +20,6 @@ export const verify = async (qrData: string, header = 'HC1:') => {
   const sigStructure = ['Signature1', p, u, cwt];
   const toBeSigned = cbor.encode(sigStructure);
 
-  await crypto.ensureSecure();
   const key = await crypto.subtle.importKey(
     'jwk',
     KEY,
@@ -33,7 +32,7 @@ export const verify = async (qrData: string, header = 'HC1:') => {
   );
 
   let valid = await crypto.subtle.verify(
-    { name: 'RSA-PSS', hash: { name: 'SHA-256' } },
+    { name: 'RSA-PSS', hash: { name: 'SHA-256' }, saltLength: 32 },
     key,
     signers,
     toBeSigned

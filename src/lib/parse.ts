@@ -1,5 +1,5 @@
 import zlib from 'pako';
-import * as base45 from 'base45-ts';
+import * as base45 from 'base45-web';
 import * as cbor from 'cbor-web';
 import { cleanInput } from './clean';
 
