@@ -4,7 +4,7 @@ A library to validate the COVID-19 vaccine certificate issued by the Uruguayan g
 
 ## Compatibility
 
-Should work in Node, React Native and Web (through WebCrypto). Only React Native has been tested.
+Works in Node, React Native and Web (through WebCrypto).
 
 ## Usage
 
