@@ -6,6 +6,10 @@ A library to validate the COVID-19 vaccine certificate issued by the Uruguayan g
 
 Works in Node, React Native and Web (through WebCrypto).
 
+## Demo
+
+A live demo is available and published on https://coverifi-fcs.vercel.app/
+
 ## Usage
 
 ```ts
